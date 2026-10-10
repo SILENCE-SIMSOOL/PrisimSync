@@ -2,6 +2,8 @@
 **PrismSync** is a lightweight Windows application built with C++ for managing Prism Launcher instances and easily synchronizing Minecraft settings and files between them.  
 Designed with simplicity, performance, and minimal resource usage in mind.
 
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/18df0343-3622-4fff-88f3-3616a7681401" />
+
 ## Features
 - **Instance Management** — Automatically detects Prism Launcher instances and displays their configured icons.
 - **Main Instance Selection** — Choose your primary instance and switch between instances at any time.
@@ -67,4 +69,3 @@ You can change the main instance at any time.
 
 ## Disclaimer
 PrismSync is an independent project and is not affiliated with or endorsed by Prism Launcher or Mojang Studios.  
-Back up important instance files and worlds before importing data, as existing files may be overwritten.
