@@ -2,9 +2,11 @@
 ; Defines packaging for PrismSync Windows desktop application
 
 #define MyAppName "PrismSync"
-#define MyAppVersion "1.0.0"
+#define VersionFile FileOpen("version.txt")
+#define MyAppVersion Trim(FileRead(VersionFile))
+#expr FileClose(VersionFile)
 #define MyAppPublisher "SILENCE"
-#define MyAppURL "https://github.com/SILENCE-SIMSOOL/PrisimSync"
+#define MyAppURL "https://github.com/SILENCE-SIMSOOL/PrismSync"
 #define MyAppExeName "PrismSync.exe"
 
 [Setup]

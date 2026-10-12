@@ -1,0 +1,24 @@
+#include <windows.h>
+#include "version.h"
+1 ICON "assets/icon.ico"
+1 VERSIONINFO
+FILEVERSION PRISM_VERSION_NUM
+PRODUCTVERSION PRISM_VERSION_NUM
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904B0"
+		BEGIN
+			VALUE "FileDescription", "PrismSync"
+			VALUE "FileVersion", PRISM_VERSION
+			VALUE "ProductVersion", PRISM_VERSION
+			VALUE "ProductName", "PrismSync"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x0409, 1200
+	END
+END

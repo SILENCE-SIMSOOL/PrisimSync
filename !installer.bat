@@ -2,11 +2,8 @@
 setlocal
 cd /d "%~dp0"
 
-if not exist "build\PrismSync.exe" (
-	echo [INFO] Building PrismSync.exe first...
-	call "!build.bat"
-	if errorlevel 1 exit /b 1
-)
+call "!build.bat"
+if errorlevel 1 exit /b 1
 
 set "ISCC="
 if exist "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" set "ISCC=C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
